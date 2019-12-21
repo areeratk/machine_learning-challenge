@@ -61,4 +61,6 @@
      weighted avg       0.48      0.50      0.49      2186
    ```
 
-   
+   SVM model provided 3% slightly better accuracy over the Grid Search model.  The accuracy rate, however is quite low within the low range of the 50th percentile.  False positive are also very high, 67% for the SVM model and 70% for the Grid Search model.  Again the SVM does slightly better.  In addition, the best parameters for the Grid Search model are quite constrained with high C = 10 (versus 1 for the SVM model) and low gamma = .0001.  On the other hand, the SVM gamma is unspecified.  This may be an issue given that its function is polynomial, not linear (degree = 3).
+
+   In summary, these models need revisions of features to improve the accuracy.  Meanwhile, other classifiers of machine learning may be explored as well.
